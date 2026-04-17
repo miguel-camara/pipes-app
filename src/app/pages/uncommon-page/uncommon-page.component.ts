@@ -4,17 +4,17 @@ import { interval, map, tap } from 'rxjs';
 import { CardComponent } from '../../components/card/card.component';
 
 const client1 = {
-  name: 'Fernando',
+  name: 'Miguel',
   gender: 'male',
-  age: 39,
-  address: 'Ottawa, Canadá',
+  age: 26,
+  address: 'Calkini, Campeche',
 };
 
 const client2 = {
-  name: 'Melissa',
+  name: 'Mariana',
   gender: 'female',
-  age: 33,
-  address: 'Toronto, Canadá',
+  age: 24,
+  address: 'Calkini, Campeche',
 };
 
 
@@ -75,12 +75,9 @@ export default class UncommonPageComponent {
 
   // KeyValue Pipe
   profile = {
-    name: 'Fernando',
-    age: 39,
-    address: 'Ottawa, Canada',
-    child: {
-      name: 'Miguel',
-    }
+    name: 'Miguel',
+    age: 26,
+    address: 'Calkini, Campeche'
   };
 
   // Async Pipe
@@ -96,4 +93,7 @@ export default class UncommonPageComponent {
     map((value) => value + 1),
     tap((value) => console.log('tap:', value))
   );
+
+
+
 }
