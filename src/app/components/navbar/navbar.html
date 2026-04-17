@@ -1,0 +1,14 @@
+<div class="navbar bg-base-100 shadow-sm">
+  <div class="flex-1">
+    <a class="btn btn-ghost text-xl">PIPES</a>
+  </div>
+  <div class="flex-none">
+    <ul class="menu menu-horizontal px-1">
+      @for (link of routes; track $index) {
+        <li>
+          <a [routerLink]="link.path" routerLinkActive="text-accent"> {{ link.title }} </a>
+        </li>
+      }
+    </ul>
+  </div>
+</div>
